@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//Ruta para ver rutinas
+Route::get('/scheduleRoutines', 'scheduleController@index')->name('schedules');

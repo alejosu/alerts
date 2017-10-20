@@ -18,7 +18,7 @@ class CreateSchedulesTable extends Migration
             $table->timestamps();
             
             $table->integer('vehicle_routine_id')->unsigned();
-            $table->boolean('active')->default('false');
+            $table->boolean('active');
         });
     }
 
