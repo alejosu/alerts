@@ -16,6 +16,9 @@ class CreateVehicleRoutines extends Migration
         Schema::create('vehicle_routines', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            
+            $table->date('nextDate');
+            $table->double('nextKm');
         
             $table->integer('routine_id')->unsigned();
             $table->integer('vehicle_id')->unsigned();

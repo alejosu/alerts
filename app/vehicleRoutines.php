@@ -9,6 +9,8 @@ class vehicleRoutines extends Model
     protected $fillable = [
         'routine_id',
         'vehicle_id',
+        'nextDate',
+        'nextKm',
     ];
     
     public function vehicle(){
@@ -18,4 +20,6 @@ class vehicleRoutines extends Model
     public function routine(){
         return $this->belongsTo(routine::class);
     }
+    
+    
 }

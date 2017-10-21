@@ -15,5 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Ruta para asignar rutina a vehículo
+    Route::post('/{vehicle}/addRoutine', 'VehicleController@addRoutine')->name('addRoutine');
+
 //Ruta para ver rutinas
-Route::get('/scheduleRoutines', 'scheduleController@index')->name('schedules');
+    Route::get('/scheduleRoutines', 'scheduleController@index')->name('schedules');
